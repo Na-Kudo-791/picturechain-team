@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+ 
+ .rule_back{
+     background-size: cover;
+     background-position: center;
+     background-image:url("images/rule_background.jpg");
+     height: 100vh;
+ }
+ 
+ .rule_title{
+    padding-top:200px;
+    font-size: 72px;
+    color: white;
+    font-family: "MS PMincho";
+ }
+
+ .rules{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 350px;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    font-family: "MS PMincho";
+}
+ 
+ .close_rule{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: grey;
+    font-size: 32px;
+    border-radius: 20vh;
+    font-family: "MS PMincho";
+     
+ }
+

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url("images/gameover.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff; /* 落ち着いたダークグレー文字 */
+  font-family: "MS PMincho", "Hiragino Kaku Gothic ProN", sans-serif; /* 丸ゴ系でやさしさUP */
+}
+
+p {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.retry_button {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: grey;
+  font-size: 32px;
+  border-radius: 20vh;
+  font-family: "MS PMincho";
+  margin-top: 50px;
+}

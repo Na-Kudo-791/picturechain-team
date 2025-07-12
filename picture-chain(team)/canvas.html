@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お絵描きツール</title>
+  <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+
+ 
+
+  <div class="countdown-container">
+    <h1>残り</h1>
+    <div class="time-container">
+      <p class="time"><span id="min"></span>minutes</p>
+      <p class="time"><span id="sec"></span>seconds</p>
+    </div>
+
+  <p id="displayAnswer"></p>
+  <p id="nextCharText"></p> <!-- ←追加！ -->
+
+ 
+ 
+    <div class="toolbar">
+    <label>色: <input type="color" id="colorPicker" value="#000000"></label>
+    <label>線の太さ: <input type="range" id="lineWidth" min="1" max="20" value="2"></label>
+
+    <button id="eraserBtn">
+      <img src="images/eraser.png" alt="消しゴム" class="icon"> 消しゴム
+    </button>
+
+    
+    <button id="drawBtn">
+      <img src="images/pencil.png" alt="ペン" class="icon"> ペン
+    </button>
+
+    <button id="fillBtn">
+      <img src="images/fill.png" alt="塗りつぶし"class="icon">塗りつぶし
+    </button>
+
+    <button id="undoBtn">
+      <img src="images/undo.png" alt="やり直し"class="icon">やり直し
+    </button>
+
+
+    <button id="clearBtn">
+      <img src="images/clear.png" alt="クリア"class="icon">クリア
+    </button>
+
+  </div>
+
+   <img id="previousImageDisplay" alt="前の人の絵">
+   
+  <canvas id="drawingCanvas" width="800" height="600"></canvas>
+
+  <div id="blindOverlay"></div>
+
+  <!-- 最後に body 内の下に追加 -->
+  <button id="saveBtn" class="save-button">完成</button>
+
+  <script src="canvas.js"></script>
+
+ 
+
+
+
+
+</body>
+</html>

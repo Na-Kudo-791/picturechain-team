@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>予想</title>
+        <link rel="stylesheet" href="prediction.css">
+<script src="detabase.js"></script>
+<script src="prediction.js" defer></script>
+
+</head>
+<body>
+
+
+<p>
+
+
+  <div class="question_text">
+
+  <!-- 残り＋タイマー：左上 -->
+  <div class="countdown-container">
+  <h2>残り</h2>
+  <div class="time-container">
+    <p class="time"><span id="min"></span>minutes</p>
+    <p class="time"><span id="sec"></span>seconds</p>
+  </div>
+</div>
+
+
+  <!-- 中央：入力欄とボタン -->
+  <div class="input_area">
+    <img id="drawingDisplay" alt="描かれた絵">
+    <p>この絵はなんでしょう？（ひらがなのみ）</p>
+    <input type="text" id="answerText">
+    <input type="button" value="check" id="checkButton">
+  </div>
+
+
+</body>
+</html>

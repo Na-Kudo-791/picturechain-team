@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  height: 100vh;
+  font-family: "MS PMincho", serif;
+  color: #333;
+  position: relative;
+
+  background-image: url('images/input_word.jpg');  /* 背景画像を追加 */
+  background-size: cover;                      /* 画面全体にフィットさせる */
+  background-position: center;                 /* 画像を中央に配置 */
+  background-repeat: no-repeat;                /* 画像の繰り返しを無効に */
+  height: 100vh;     
+}
+
+
+.time-container {
+  display: flex;
+  
+}
+
+.time {
+  font-weight: 900;
+  color:rgb(68, 68, 68);
+  margin: .1em;
+  background-color: rgb(216, 165, 173);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: "MS PMincho";
+}
+
+
+#hour,#min,#sec {
+  font-size: 30px;
+  margin-right: 1rem;
+}
+
+/* 🔵 「残り」：minutes/secondsの右あたり 
+.question_text {
+  position: absolute;
+  top: 0;
+  left: 180px; /* 調整可：minutes/secondsの右側に表示 
+  font-size: 32px;
+  font-weight: bold;
+}*/
+
+/* 🟢 入力欄とボタン（中央） */
+.input_area {
+  font-weight: 700;
+  color:#fff;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.input_area p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-family: "MS PMincho", serif;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="button"] {
+  width: 140px;
+  height: 45px;
+  margin-left: 20px;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: "MS PMincho", serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #43a047;
+}
+
+#drawingDisplay {
+  display: none; /* JSで画像が読み込まれたら表示する */
+  width: 480px;  /* 表示サイズ（幅） */
+  height: 360px; /* 表示サイズ（高さ）*/
+  margin: 0 auto 20px; /* 上下左右の余白（autoで水平中央揃え）*/
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}

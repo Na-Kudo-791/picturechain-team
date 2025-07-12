@@ -1,0 +1,40 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+.title_back{
+    background-size: cover;
+    background-position: center;
+    background-image:url("images/title_background.jpg");
+    height: 100vh;
+}
+
+.title{
+    padding-top:400px;
+    padding-bottom: 50px;
+    font-size: 72px;
+    color: white;
+    font-family: "MS PMincho";
+}
+
+.close_title{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: grey;
+    font-size: 32px;
+    border-radius: 20vh;
+    font-family: "MS PMincho";
+}
+
+.album_button{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: grey;
+    font-size: 32px;
+    border-radius: 20vh;
+    font-family: "MS PMincho";
+}

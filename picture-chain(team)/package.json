@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "canvas_server.js",
+  "scripts": {
+    "start": "node canvas_server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "express": "^5.1.0"
+  }
+}
